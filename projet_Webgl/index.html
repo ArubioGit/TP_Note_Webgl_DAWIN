@@ -1,0 +1,59 @@
+<html>
+<head>
+    <script src="./gl-matrix-min.js"></script>
+    <script src='script.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Projet WebGL - Anthony Rubio</title>
+</head>
+
+<body onload='main()'>
+    <canvas id='canvas-cube' width=770px height=770px></canvas>
+    <aside>
+        <hr>
+        <h2 id="title">Settings</h2>
+        <hr>
+        <form id="settingsForm">
+            <h2>Translation</h2>
+            <div class="slideContainer">
+                tx = <span id="valueTX">0</span> 
+                <input type="range" min="-10" max="10"
+                    step="0.1" value="0" class="slider" id="tx">
+
+                ty = <span id="valueTY">0</span> 
+                <input type="range" min="-10" max="10"
+                    step="0.1" value="0" class="slider" id="ty">
+
+                tz = <span id="valueTZ">0</span> 
+                <input type="range" min="-10" max="10"
+                    step="0.1" value="0" class="slider" id="tz">
+            </div>
+
+            <h2>Rotation</h2>
+            <div class="slideContainer">
+                rx = <span id="valueRX">0</span> 
+                <input type="range" min="-3.14" max="3.14" 
+                    step="0.01" value="0" class="slider" id="rx">
+                
+                ry = <span id="valueRY">0</span> 
+                <input type="range" min="-3.14" max="3.14"
+                     step="0.01" value="0" class="slider" id="ry">
+                
+                rz = <span id="valueRZ">0</span> 
+                <input type="range" min="-3.14" max="3.14"
+                    step="0.01" value="0" class="slider" id="rz">
+            </div>
+
+            <h2>Camera</h2>
+            <div class="slideContainer">
+                Zoom = <span id="valueZoom">1</span> 
+                <input type="range" min="0.1" max="5"
+                    step="0.1" value="1" class="slider" id="zoom">
+                
+                Perspective = <span id="valuePerspective">30</span>°
+                <input type="range" min="30" max="120" step="0.1" value="30" class="slider" id="perspective">
+            </div>
+        </form>
+    </aside>
+</body>
+
+</html>

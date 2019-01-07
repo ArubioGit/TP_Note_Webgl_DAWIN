@@ -1,0 +1,54 @@
+body {
+    background-color: #4d4d4d;
+    color: white;
+    font-family: fantasy
+}
+
+.mainContainer {
+    display: flex;
+}
+
+#title {
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 15px;
+}
+
+hr {
+	border-top: 3px double #8c8b8b;
+}
+
+#canvas-cube {
+    margin-left: 100px;
+}
+
+aside {
+    text-align: center;
+    float: right;
+    width: 25%;
+    padding: 20px;
+    margin-right: 75px;
+    margin-top: 40px;
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+.slideContainer {
+    width: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 5px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background: #d3d3d3;
+    -webkit-appearance: none;
+}
+.slider:focus{ outline: 0};
+
